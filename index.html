@@ -1,45 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio - Juan Luis Ortigosa</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Juan Luis Ortigosa | Desarrollador Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <h1>Juan Luis Ortigosa</h1>
-    <h2>Desarrollador Web Junior</h2>
-</header>
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero-title">Hola, soy <span class="highlight">Juan Luis Ortigosa</span></h1>
+            <p class="hero-subtitle">Desarrollador Web Junior • Creador de Proyectos</p>
+            <p class="hero-description">Construyo sitios web claros, funcionales y bien estructurados</p>
+            <div class="hero-actions">
+                <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
+                <a href="#contacto" class="btn btn-secondary">Contactar</a>
+            </div>
+        </div>
+    </header>
 
-<section class="about">
-    <h3>Sobre mí</h3>
-    <p>Soy desarrollador web junior con enfoque en construir sitios web claros y funcionales. Actualmente en búsqueda de prácticas para seguir aprendiendo y crecer dentro de un equipo.</p>
-</section>
+    <main class="container">
+        <section class="about card">
+            <h2>Sobre mí</h2>
+            <p>Soy desarrollador web junior con enfoque en construir sitios web claros, funcionales y bien estructurados. Actualmente en búsqueda de prácticas para aprender, aportar y crecer dentro de un equipo de desarrollo.</p>
+        </section>
 
-<section class="skills">
-    <h3>Habilidades</h3>
-    <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>Bootstrap</li>
-        <li>Git / GitHub</li>
-        <li>VS Code</li>
-        <li>Photoshop / Gimp / Canva</li>
-    </ul>
-</section>
+        <section class="skills card">
+            <h2>Habilidades</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Bootstrap</span>
+                <span class="skill-tag">Git / GitHub</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">Photoshop / Gimp / Canva</span>
+            </div>
+        </section>
 
-<section class="projects">
-    <h3>Proyectos</h3>
-    <div class="project-item">Proyecto 1 – En desarrollo</div>
-    <div class="project-item">Proyecto 2 – En desarrollo</div>
-    <div class="project-item">Proyecto 3 – En desarrollo</div>
-</section>
+        <section id="proyectos" class="proyectos">
+            <h2>Proyectos Destacados</h2>
+            <div class="grid">
+                <div class="card project-card">
+                    <h3>Comandos Linux</h3>
+                    <p>Una web educativa con explicaciones de comandos esenciales de Linux.</p>
+                    <a href="https://juanolo78.github.io/comandos-linux" class="card-btn">Ver proyecto</a>
+                </div>
 
-<footer>
-    <p>Contacto: <a href="mailto:ortigosajl@gmail.com">ortigosajl@gmail.com</a> | 
-    <a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
-</footer>
+                <div class="card project-card">
+                    <h3>Navalmoralejo</h3>
+                    <p>Portal web con recursos, información local y diseño renovado.</p>
+                    <a href="https://juanolo78.github.io/navalmoralejo" class="card-btn">Ver proyecto</a>
+                </div>
+
+                <div class="card project-card">
+                    <h3>Más proyectos</h3>
+                    <p>Descubre mis otros proyectos en mi GitHub.</p>
+                    <a href="https://github.com/Juanolo78" class="card-btn">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="container">
+            <p>Contacto: <a href="mailto:ortigosajl@gmail.com">ortigosajl@gmail.com</a></p>
+            <p>
+                <a href="https://linkedin.com/in/juanolo78" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/Juanolo78" target="_blank">GitHub</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
